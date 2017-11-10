@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sample Etymological Phenomena for Second TEI Etymology Paper</title>
+            <author>Jack Bowers</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <label>Cognate Set</label>
+         
+         <entry xml:lang="en">
+            <form type="lemma">
+               <orth>girl</orth>
+            </form>
+            
+            <etym>
+               
+               <xr type="cognateSet">
+                  <lbl>Cf.</lbl>
+                  <cit type="cognate" xml:lang="ffr">
+                     <lang>NFries.</lang>
+                     <oRef>gör</oRef>
+                     <def>a girl</def>
+                  </cit>
+                  
+                  <cit type="cognate" xml:lang="nds-x-pom"><!-- Pomeran. german dialect variety of low german 
+                     a more specific variety "East Pomeranian"
+                     has no ISO tag but a Glottolog one: east2293 -->
+                     <lang>Pomeran.</lang>
+                     <oRef>goer</oRef>
+                     <def>a child</def>
+                  </cit>
+                  
+                  <cit type="cognate" xml:lang="nds">
+                     <lang>O. Low. G.</lang>
+                     <oRef>gör</oRef>
+                     <def>a child</def>
+                     <bibl>Bremen Wörterbuch, ii. 528</bibl>
+                  </cit>
+                  
+                  <cit type="cognate" xml:lang="gsw">
+                     <lang>Swiss</lang>
+                     <oRef type="variant">gurre</oRef>
+                     <oRef type="variant">gurrli</oRef>
+                     <def>a depreciatory term for a girl</def>
+                     <bibl>Sanders, G. Dict. i. 609. 641</bibl>
+                  </cit>
+                  <cit type="cognate" xml:lang="nor">
+                     <lang>Norw.</lang>
+                     <oRef>gorre</oRef>
+                     <def>a small child</def>
+                     <bibl>(Aasen)</bibl>
+                  </cit>
+                  <cit type="cognate" xml:lang="swe-x-dia">
+                     <lang>Swed. dial.</lang>
+                     <oRef type="variant">gårrä</oRef>
+                     <oRef type="variant">gurre</oRef>
+                     <def>a small child</def>
+                  </cit>
+               </xr>
+            </etym>
+         </entry>
+         
+         <label>Portmanteau (Blends)</label>
+         <!--  -->
+         <entry xml:lang="en">
+            <form type="lemma">
+               <orth>Brexit</orth>
+            </form>
+            <gramGrp>
+               <gram></gram>
+            </gramGrp>
+            <sense>
+               ....
+            </sense>
+            <etym type="portmanteau">
+               <lbl>portmanteau of</lbl>
+               <cit type="etymon">
+                  <oRef>Britain</oRef>
+                  <!-- add pron? -->
+               </cit>
+               <pc>+</pc>
+               <cit type="etymon">
+                  <oRef>exit</oRef>
+                  <!-- add pron? -->
+               </cit>
+               <!-- (interesting extra component, overlaps with other new phenomena to introduce) -->
+               <!-- formed by analogy with "Grexit" -->
+               <bibl type="source"><ref target="https://en.wiktionary.org/wiki/Brexit"/></bibl>
+               <!-- or should this be <ref type="bibl" target="https://en.wiktionary.org/wiki/Brexit"/> ? or <re>?-->
+            </etym>
+         </entry>
+         
+         
+         
+         <label></label>
+         <!-- 
+         The first one is the problem of lexicalisation of inflected forms (e.g., in English or French, a past participle which also became an adjective, often with a slightly different meaning).
+         
+         -->
+         
+         
+         <!-- 
+          The other one is analogical leveling and metanalysis. 
+         An example of metanalysis is English "pea", an "erroneous" singular created from the form "peas", borrowed from French "pois", erroneously interpreted as a plural form (in -s).
+         
+         Same story with "cherry", an erroneous singular for of "cherries", erroneously understood as a plural (from French (dial.?) "c(h)erise").
+       
+       As for analogical leveling itself, it is especially problematic when it affects citation forms 
+         (cf. Finnish Nom. Sg. lahti, Gen. Sg. lahden ‘bay’, vs. older Nom. Sg. laksi, which was replaced by lahti by analogy with a regular pattern Xhti / Xhden, cf. lehti / lehden ‘star’). 
+         -->
+         
+         <label>Folk Etymology</label>
+         
+         <entry>
+            <form>
+               <orth>asparagus</orth>
+            </form>
+            <gramGrp>
+               <gram></gram>
+            </gramGrp>
+            
+            <etym></etym>
+               
+            
+         </entry>
+         
+         <label>Underspecified Contents</label>
+         <!-- borrowing -->
+         <entry  xml:id="h405_qdb-d1e12076" xml:lang="bar">
+            <form type="hauptlemma">
+               <orth>hetzen</orth>
+            </form>
+            <gramGrp>
+               <pos>Verb</pos>
+            </gramGrp>
+            <form type="lehnwort" n="1">
+               <pron notation="tustep">slow. höcati</pron>
+            </form>
+            <sense corresp="this:LW1">
+               <def xml:lang="de">hetzen</def>
+            </sense>
+            <etym type="borrowing">
+               aus <cit type="etymon" xml:lang="sl"><lang>slow.</lang></cit>
+            </etym>
+            <ref type="archiv">HK 405, h4050707.pas^#16</ref>
+            <ref type="quelle">Im ganzen slow. Kärnten, Preschern</ref>
+            <ref type="quelleBearbeitet">{2.4} UKä.?</ref>
+            <ref type="bibl">
+               <bibl>Slg.Preschern</bibl>
+            </ref>
+            <usg type="geo">
+               <placeName>slow.Kä.</placeName>
+            </usg>
+         </entry>
+         
+         <!-- inheritance -->
+         <entry xml:id="z884_qdb-d1e11959" xml:lang="bar">
+            <form type="hauptlemma">
+               <orth>(Fer)zug</orth>
+            </form>
+            <gramGrp>
+               <pos>Subst</pos>
+            </gramGrp>
+            <form type="lautung" n="1">
+               <pron notation="tustep">verzug</pron>
+               <gramGrp>
+                  <gram>[m]</gram>
+               </gramGrp>
+            </form>
+            <sense corresp="this:LT1">
+               <def xml:lang="de">Säumniss</def>
+            </sense>
+            <note type="anmerkung" resp="O" corresp="this:LT1">m.</note>
+            <etym type="inheritance"><cit type="etymon" xml:lang="gmh"><lang>mhd.</lang><bibl>Lexer Wb. III 324</bibl></cit></etym>
+            <ref type="archiv">HK 884, z8840111.bar^#40</ref>
+            <ref type="quelle">Schönbach Gl.<ref type="seite">584</ref>
+            </ref>
+            <ref type="quelleBearbeitet">{2,3} hist.</ref>
+            <ref type="bibl">
+               <bibl>SteirKäWeistGl. S. HW-3742/6/b</bibl>
+            </ref>
+         </entry>
+         
+         
+         
+         <label>Conflicting Etymologies</label>
+         
+         <entry>
+            <form type="lemma">
+               <orth>barbarian</orth>
+            </form>
+            
+            <etym>
+               
+            </etym>
+         </entry>
+         
+         
+         <label>Onomatopeia</label>
+         <entry xml:lang="kat">
+            <form type="lemma">
+               <orth>ღრუტუ ღრუტუ</orth>
+               <pron></pron><!-- ideally onomatapeia examples should have pronunciation -->
+            </form>
+            <sense>
+               <def xml:lang="en">The sound of a pig grunting</def>
+            </sense>
+            <etym type="onomatopeia"/>           
+         </entry>
+         
+         <entry>
+            <form type="lemma">
+               <orth></orth>
+               <pron></pron>
+            </form>
+            
+            <etym type="onomatopeia"/>
+               
+            
+         </entry>
+         
+      </body>
+  </text>
+</TEI>
